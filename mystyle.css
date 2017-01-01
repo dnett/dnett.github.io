@@ -1,0 +1,38 @@
+<STYLE TEXT="text/css">
+<!--
+BODY {background: #FFFFFF; font-family: arial}
+A:link {color: #000080}
+A:visited {color: #4682B4}
+A {text-decoration: none; font-family: arial}
+H1 {font-size: 24pt; font-family: arial; margin-left: 20px}
+H2 {font-size: 18pt; font-family: arial; margin-left: 20px}
+H3 {font-size: 14pt; font-family: arial; margin-left: 20px}
+P {font-size: 14pt; font-family: arial; line-height: 25px;
+   margin-left: 40px; margin-right: 250px; margin-top: 10px}
+UL > LI {font-family: arial; line-height: 25px}
+OL > LI {font-family: arial; line-height: 25px}
+
+#menu {
+    width: auto;
+    height: 40px;
+    font-size: 16px;
+    font-family: arial;
+    text-align: left;
+    background-color: #000080;
+}
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+#menu li {
+display: inline;
+padding: 20px;
+}
+#menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 8px 8px 8px;
+}
+-->
+</STYLE>
