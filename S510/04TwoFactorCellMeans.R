@@ -6,7 +6,7 @@
 #
 ########################################
 
-d=read.delim("http://dnett.gitbub.io/S510/dietdrug.txt")
+d=read.delim("http://dnett.github.io/S510/dietdrug.txt")
 d
 
 d$diet=factor(d$diet)
