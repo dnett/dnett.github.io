@@ -1,7 +1,7 @@
 #Now let's consider an example with binomial
 #rather than Bernoulli responses.
 
-d=read.delim("http://www.public.iastate.edu/~dnett/S511/Trout.txt")
+d=read.delim("http://dnett.github.io/S510/Trout.txt")
 d
 
 #Let's plot observed tumor proportions
