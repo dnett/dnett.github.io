@@ -2,7 +2,7 @@ setwd("c:/z/Courses/S510/Code")
 
 #Read the data and create factors.
 
-d=read.delim("http://www.public.iastate.edu/~dnett/S511/RepeatedMeasures.txt")
+d=read.delim("http://dnett.github.io/S510/RepeatedMeasures.txt")
 head(d)
 
 d$Program=as.factor(d$Program)
