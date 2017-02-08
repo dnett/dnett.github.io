@@ -1,4 +1,4 @@
-d=read.delim("http://www.public.iastate.edu/~dnett/S510/dietdrug.txt")
+d=read.delim("http://dnett.github.io/S510/dietdrug.txt")
 d
 
 d$diet=factor(d$diet)
