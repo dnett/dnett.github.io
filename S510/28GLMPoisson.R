@@ -1,4 +1,4 @@
-d=read.delim("http://www.public.iastate.edu/~dnett/S510/LeafInfectionData.txt")
+d=read.delim("http://dnett.github.io/S510/LeafInfectionData.txt")
 d
 x=d$x
 y=d$y
