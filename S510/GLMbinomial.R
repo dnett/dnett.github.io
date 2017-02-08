@@ -1,4 +1,4 @@
-d=read.delim("http://www.public.iastate.edu/~dnett/S511/Disease.txt")
+d=read.delim("http://dnett.github.io/S510/Disease.txt")
 head(d)
 
 d$ses=as.factor(d$ses)
