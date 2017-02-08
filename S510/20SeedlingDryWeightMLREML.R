@@ -1,4 +1,4 @@
-d=read.delim("http://www.public.iastate.edu/~dnett/S510/SeedlingDryWeight2.txt")
+d=read.delim("http://dnett.github.io/S510/SeedlingDryWeight2.txt")
 d
 
 plot(d[,2],d[,4]+rnorm(56,0,.2),
