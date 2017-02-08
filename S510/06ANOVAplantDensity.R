@@ -2,7 +2,7 @@
 #Principles of Research Design and Analysis"
 #2nd Edition by Robert O. Kuehl
 
-d=read.delim("http://www.public.iastate.edu/~dnett/S510/PlantDensity.txt")
+d=read.delim("http://dnett.github.io/S510/PlantDensity.txt")
 
 d
 
