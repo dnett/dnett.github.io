@@ -1,4 +1,4 @@
-d=read.delim("http://www.public.iastate.edu/~dnett/S510/SeedlingDryWeight.txt")
+d=read.delim("http://dnett.github.io/S510/SeedlingDryWeight.txt")
 d
 
 y=d[,3]
