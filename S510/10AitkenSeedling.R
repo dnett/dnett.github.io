@@ -12,20 +12,20 @@ V=diag(1/count)
 
 #Compute V^{-.5}
 
-Vn12=diag(sqrt(count))
+Vn.5=diag(sqrt(count))
 
 #In general, we could compute V^{-.5} as follows:
 #
 # e=eigen(V)
 # P=e$vectors
 # lambda=e$values
-# Vn12=P%*%diag(1/sqrt(lambda))%*%t(P)
+# Vn.5=P%*%diag(1/sqrt(lambda))%*%t(P)
 
 #Now transform y and X to z and W. 
 
-z=Vn12%*%y
+z=Vn.5%*%y
 
-W=Vn12%*%X
+W=Vn.5%*%X
 
 o=lm(z~0+W)
 summary(o)
