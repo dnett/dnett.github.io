@@ -12,7 +12,7 @@ P {font-size: 14pt; font-family: arial; line-height: 25px;
 UL > LI {font-family: arial; line-height: 25px}
 OL > LI {font-family: arial; line-height: 25px}
 
-#menu {
+#menu { 
     width: auto;
     height: 40px;
     font-size: 16px;
@@ -35,4 +35,5 @@ padding: 20px;
     padding: 8px 8px 8px 8px;
 }
 -->
+
 </STYLE>
