@@ -8,10 +8,6 @@ legend("topright",c("Genotype 1","Genotype 2"),fill=c(2,4),border=c(2,4))
 
 d$Genotype=factor(d$Genotype)
 
-library(nlme)
-
-lme(SeedlingWeight~Genotype,random=~1|Tray,method="ML",data=d)
-
 library(lme4)
 
 lmer(SeedlingWeight~Genotype+(1|Tray),REML=F,data=d)

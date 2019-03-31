@@ -8,15 +8,15 @@ legend("topright",c("Genotype 1","Genotype 2"),fill=c(2,4),border=c(2,4))
 
 d$Genotype=factor(d$Genotype)
 
-library(nlme)
-
-lme(SeedlingWeight~Genotype,random=~1|Tray,method="ML",data=d)
-
 library(lme4)
 
+#Maximum Likelihood Estimation
 lmer(SeedlingWeight~Genotype+(1|Tray),REML=F,data=d)
 
-lme(SeedlingWeight~Genotype,random=~1|Tray,data=d)
-
+#REML Estimation
 lmer(SeedlingWeight~Genotype+(1|Tray),data=d)
 
+ranef(lmer(SeedlingWeight~Genotype+(1|Tray),data=d))
+
+#Obtain EBLUPs of Tray Effects (see slide set 21)
+ranef(lmer(SeedlingWeight~Genotype+(1|Tray),data=d))
