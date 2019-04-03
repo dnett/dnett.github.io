@@ -15,8 +15,3 @@ lmer(SeedlingWeight~Genotype+(1|Tray),REML=F,data=d)
 
 #REML Estimation
 lmer(SeedlingWeight~Genotype+(1|Tray),data=d)
-
-ranef(lmer(SeedlingWeight~Genotype+(1|Tray),data=d))
-
-#Obtain EBLUPs of Tray Effects (see slide set 21)
-ranef(lmer(SeedlingWeight~Genotype+(1|Tray),data=d))
