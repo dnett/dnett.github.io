@@ -41,6 +41,12 @@ o.lme = lme(Strength ~ Program*Timef,
 
 summary(o.lme)
 
+#  Examine the estimated variance-covariance
+#  matrix for the subvector of responses
+#  from a single subject.
+
+getVarCov(o.lme, individuals = 1, type = "marginal")
+
 #  Use the gls( ) function to fit a
 #  model where the errors have a 
 #  compound symmetry covariance structure
@@ -53,6 +59,8 @@ o.cs = gls(Strength ~ Program*Timef,
   method="REML")
 summary(o.cs)
 
+getVarCov(o.cs)
+
 # Try an auto regressive covariance 
 # structures across time within 
 # subjects
@@ -62,6 +70,24 @@ o.ar1 = gls(Strength ~ Program*Timef,
   correlation = corAR1(form=~1|Subj),
   method="REML")
 summary(o.ar1)
+
+#  Our models assume the variance-covariance
+#  matrix of the response vector is the same
+#  for all subjects.  To see the estimated
+#  variance-covariance matrix for any
+#  subject use getVarCov(  ).
+
+getVarCov(o.ar1)
+
+#  For situations were the variance-covariance
+#  matrix differs accross individuals,
+#  use the 'individual' parameter.
+#  For example, to see the estimated 
+#  variance-covariance for the third subject
+#  ...
+
+getVarCov(o.ar1, individual = 3)
+
 
 #  Use an unstructured covariance matrix
 #  for observations at different time 
@@ -73,6 +99,9 @@ o.un = gls(Strength ~ Program*Timef,
   weight = varIdent(form = ~ 1|Timef),
   method="REML")
 summary(o.un)
+
+getVarCov(o.un, individual = 3)
+
 
 #  Compare the fit of various covariance
 #  structures.
